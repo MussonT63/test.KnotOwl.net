@@ -1,0 +1,16 @@
+<!-- hide script from old browsers
+document.write( "<h2>Chief Okemos District Advancement Committee Resources</h2>" )
+document.write( "<h3>" )
+document.write( "   <a href=/ChiefOkemosDistrict/Advancement>Home</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Advancement/Eagle>Eagle</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Advancement/MBCinfo>MBC Info</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Advancement/Reports>Reports</a> " )
+document.write( "   <br> " )
+document.write( "   <a href=/ChiefOkemosDistrict/Advancement/Venturing>Venturing</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Calendar>Calendar</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Laurels>Laurels</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Advancement/FAQ>FAQ</a> " )
+document.write( " | <a href=/ChiefOkemosDistrict/Advancement/Misc>Misc</a> " )
+document.write( "</h3>" )
+document.write( "<hr>" )
+// end hiding script from old browsers -->

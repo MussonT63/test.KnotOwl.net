@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.8.0">
+  <style>
+    table, th, td { border-collapse: collapse; border: 1px solid black; white-space: nowrap; }
+    img { width:50px; }
+    th { font-size: 1.5em; }
+  </style>
+  <title></title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+	      <img alt="" src="01.svg"> <img alt="" src="02.svg"> <img alt="" src="03.svg"> <img alt="" src="04.svg"> <br>
+	      <img alt="" src="05.svg"> <img alt="" src="06.svg"> <img alt="" src="07.svg"> <img alt="" src="08.svg"> <br>
+	      <img alt="" src="09.svg"> <img alt="" src="10.svg"> <img alt="" src="11.svg"> <img alt="" src="12.svg">
+      </td>
+    </tr>
+  </table>
+  <hr> 
+  <table>
+    <tr>
+      <th>
+	      <img alt="month" src="calendar-color-icon.svg">
+      </th>
+      <th>Chief Okemos District<br>
+      Calendar of Events</th>
+    </tr>
+  </table>
+  <hr> 
+  <p>Use js to check today's month and put in MM.svg as the image</p>
+  <table>
+    <tr>
+      <th>line</th>
+      <th>js generated</th>
+      <th colspan=2>I'd like to see</th>
+    </tr>
+    <tr>
+      <th>Month</th>
+      <th><span id="MM"></span>.svg</th>
+      <td><img alt="" src="10.svg"></td>
+      <th>Chief Okemos District<br>
+      Calendar of Events</th>
+    </tr>
+  </table>
+  <hr>
+    Seconds : <span id="ss"></span>
+
+
+  <script type="text/javascript">
+  // https://www.w3schools.com/jsref/jsref_obj_date.asp
+    var now = new Date();
+    var MM = now.getMonth()+1;
+      MM = MM < 10 ? '0' + MM : '' + MM; //zero padding as needed
+      document.getElementById("MM").innerHTML = MM;
+    var ss = now.getSeconds();
+      ss = ss < 10 ? '0' + ss : '' + ss; //zero padding as needed
+      document.getElementById("ss").innerHTML = ss;
+  </script>
+</body>
+</html>

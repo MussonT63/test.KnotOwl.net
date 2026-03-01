@@ -1,0 +1,27 @@
+.left  { text-align: left; }
+.menu { border-collapse: collapse; border: 1px solid black; text-align: center; padding: 5px; }
+.outer { border-collapse: collapse; border: 0px solid black; margin-left: auto; margin-right: auto; }
+.red { color: red; }
+.right { text-align: right; }
+.svg { width: 20px; }
+a:link, a:visited, a:hover, a:active { color: blue; text-decoration: none; }
+div.right { text-align: right; font-size: small; }
+h1, h2, h3, h4, h5 { text-align: center; }
+hr { width: 600px; text-align: center; }
+input.width { width: 96%; }
+summary { font-size: large; font-weight: bold; }
+table { margin-left: auto; margin-right: auto; }
+table, th, td { border-collapse: collapse; border: 0px solid black; white-space: nowrap; }
+ul.none {list-style-type: none; }
+
+a:hover { font-weight: 900; }
+embed { height: 41px; width: 500px; outline: 0px dotted green; }
+
+/* FAQ specific bits */
+td.faq { border: 0px solid black; white-space: normal; width: 600px; }
+ul.faq { list-style-position: outside; padding: 0; margin: 0; list-style-type: none; }
+li.A { background: #eeeeee; margin-left: 11px; }
+li.Asub { background: #eeeeee; margin-left: 22px; }
+li.sub { margin-left: 11px; }
+.sub { margin-left: 11px; }
+/* end FAQ specific bits */
