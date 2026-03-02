@@ -82,3 +82,11 @@ http://localhost:63/ChiefOkemosDistrict/Advancement/MBCinfo/ -> /favicon.ico
 http://localhost:63/ -> /
 http://localhost:63/advancement/ -> /ChiefOkemosDistrict/Advancement
 http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js
+http://localhost:63/ -> /Advancement/
+http://localhost:63/Advancement/ -> /ChiefOkemosDistrict/Advancement
+http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js
+http://localhost:63/Advancement/ -> /ChiefOkemosDistrict/Advancement/
+http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js
+http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /favicon.ico
+http://localhost:63/Advancement/ -> /ChiefOkemosDistrict/Advancement/
+http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js
