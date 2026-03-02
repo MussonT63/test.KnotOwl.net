@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.6.0">
+  <link rel="stylesheet" href="/ChiefOkemosDistrict/Advancement/coda.css">
+  <style>
+    table, th, td { border: 1px solid black; }
+  </style>
+  <title></title>
+</head>
+<body>
+  <script language="JavaScript" type="text/javascript" src="/ChiefOkemosDistrict/Advancement/menu.js"></script>
+  <table class="outer">
+    <caption>
+      <b>What documents are reviewed at an Eagle Board of Review</b>
+    </caption>
+    <tr class="outer">
+      <td class="outer">
+        <table id="signatures">
+          <caption>
+            <input autofocus="" type="text" placeholder="Candidate Name" class="width">
+          </caption>
+          <tr>
+            <th>All</th>
+            <th>Document</th>
+            <th>Signatures</th>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="Package-Proposal"></td>
+	    <td>Approved<br>Project Proposal (5 signatures)</td>
+            <td><input type="checkbox">Candidate's Promise<br>
+            <input type="checkbox">Unit Leader<br>
+            <input type="checkbox">Unit Committee<br>
+            <input type="checkbox">Beneficiary<br>
+            <input type="checkbox">Council or District</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="Package-Fundraising"><br>
+            <input type="checkbox" name="Package-Fundraising">N/A</td>
+	    <td>Approved<br>Project Fundraising App (3 signatures)</td>
+            <td><input type="checkbox">Unit Leader<br>
+            <input type="checkbox">Beneficiary<br>
+            <input type="checkbox">Council or District</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="Package-Report"></td>
+	    <td>Approved<br>Project Report (3 signatures)</td>
+            <td><input type="checkbox">Unit Leader<br>
+            <input type="checkbox">Beneficiary</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="Package-App"></td>
+	    <td><b class=red>Verified</b><br>Rank Application (4 signatures)</td>
+            <td><input type="checkbox">Applicant<br>
+            <input type="checkbox">Unit Leader<br>
+            <input type="checkbox">Committee Chair<br>
+	    <input type="checkbox"><b class=red>Council Verification</b></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="Package-Statement"></td>
+            <td>Candidates Statement of Intent</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="Package-letters"></td>
+            <td>Letters of Recommendation</td>
+            <td><input type="checkbox">Parents/Guardians<br>
+		    <input type="checkbox">Religious<br>
+		    <input type="checkbox">Educational<br>
+		    <input type="checkbox">Employer (if any)<br>
+		    <input type="checkbox">Other #1<br>
+		    <input type="checkbox">Other #2<br>
+	    </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <script language="JavaScript" type="text/javascript" src="/ChiefOkemosDistrict/Advancement/footer.js"></script> 
+  <script>
+
+
+
+  (function() {
+    let table = document.getElementById('signatures');
+    let rows = table.children[1].children;
+
+    // Skip table header row,
+    // add listeners to checkboxes by row
+    for (let i=1; i<rows.length; i++) {
+      let row = rows[i];
+
+      // create checkboxes array from Signatures secion only
+      let checkboxes = [];
+      if (row.children[2]) { // If there are signature checkboxes
+        for (let i=0; i<row.children[2].children.length; i++) {
+          if (row.children[2].children[i].tagName == "INPUT") {
+            checkboxes.push(row.children[2].children[i]);
+          }
+        }
+      }
+
+      // Add listener to left checkbox
+      row.children[0].children[0].addEventListener('click', (event) => {
+        checkboxes.forEach((item, i) => {
+          item.checked = event.target.checked; // set the right checkboxes to the value of the left
+        });
+      });
+
+      // If there is an N/A checkbox, set a listener to deselect
+      if (row.children[0].children[2]) {
+        // set the value of the text object to textVal, with suuport for IE w/ innerText
+        let textVal = row.children[0].children[2].nextSibling.textContent
+                    ? row.children[0].children[2].nextSibling.textContent
+                    : row.children[0].children[2].nextSibling.innerText;
+
+        if (textVal === "N/A") {
+          console.log(row.children[0].children[2]);
+            row.children[0].children[2].addEventListener('click', event => {
+              checkboxes.forEach(item => {
+                item.checked = false;
+              });
+              row.children[0].children[0].checked = false; // set the left checkbox to false too
+            });
+        }
+      }
+
+      //Add listeners to right checkboxes
+      if (row.children[2]) {
+        let all = true; // bool to check if all boxes have been selected
+
+        checkboxes.forEach(item => {
+          item.addEventListener('click', (event) => {
+            // If the checkbox was selected, true
+            if (event.target.checked == true) {
+              all = true;
+              // Check all other checkboxes
+              checkboxes.forEach(box => {
+                if (box.checked != true) {
+                  all = false;
+                }
+              });
+              if (all == true) {
+                row.children[0].children[0].checked = true;
+              }
+
+            // If one checkbox was deselected, deselect the left one
+            } else {
+              row.children[0].children[0].checked = false;
+            }
+
+          });
+        });
+      }
+    }
+
+  })();
+  </script>
+</body>
+</html>
