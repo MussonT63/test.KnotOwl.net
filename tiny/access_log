@@ -111,3 +111,24 @@
 127.0.0.1 - - [01/Mar/2026:21:17:43 -0500] " " 400 -
 127.0.0.1 - - [01/Mar/2026:21:18:41 -0500] "GET /ChiefOkemosDistrict/Advancement/ HTTP/1.1" 200 2480
 127.0.0.1 - - [01/Mar/2026:21:18:42 -0500] "GET /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js HTTP/1.1" 403 -
+127.0.0.1 - - [01/Mar/2026:21:20:02 -0500] " " 400 -
+127.0.0.1 - - [01/Mar/2026:21:20:02 -0500] " " 400 -
+127.0.0.1 - - [02/Mar/2026:17:48:37 -0500] " " 400 -
+127.0.0.1 - - [02/Mar/2026:17:55:19 -0500] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Mar/2026:17:55:25 -0500] "GET /ChiefOkemosDistrict/Advancement HTTP/1.1" 302 -
+127.0.0.1 - - [02/Mar/2026:17:55:25 -0500] "GET /ChiefOkemosDistrict/Advancement/ HTTP/1.1" 304 -
+127.0.0.1 - - [02/Mar/2026:17:55:25 -0500] "GET /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js HTTP/1.1" 403 -
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing HTTP/1.1" 302 -
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing/ HTTP/1.1" 200 3227
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing/0-Venturing-awards-in-grass.jpg HTTP/1.1" 200 19212
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing/1-venturingaward.png HTTP/1.1" 200 41902
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing/2-discoveryaward.png HTTP/1.1" 200 48890
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js HTTP/1.1" 403 -
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing/3-pathfinderaward.png HTTP/1.1" 200 51441
+127.0.0.1 - - [02/Mar/2026:17:55:33 -0500] "GET /ChiefOkemosDistrict/Advancement/Venturing/4-summitaward.png HTTP/1.1" 200 51145
+127.0.0.1 - - [02/Mar/2026:17:55:35 -0500] "GET /ChiefOkemosDistrict/Calendar HTTP/1.1" 302 -
+127.0.0.1 - - [02/Mar/2026:17:55:35 -0500] "GET /ChiefOkemosDistrict/Calendar/ HTTP/1.1" 200 1177
+127.0.0.1 - - [02/Mar/2026:17:55:35 -0500] "GET /ChiefOkemosDistrict/Calendar/EventList.js HTTP/1.1" 403 -
+127.0.0.1 - - [02/Mar/2026:17:55:35 -0500] "GET /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js HTTP/1.1" 403 -
+127.0.0.1 - - [02/Mar/2026:17:55:40 -0500] "GET /ChiefOkemosDistrict/Advancement HTTP/1.1" 302 -
+127.0.0.1 - - [02/Mar/2026:17:55:40 -0500] "GET /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js HTTP/1.1" 403 -
