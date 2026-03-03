@@ -560,3 +560,7 @@ http://localhost:63/ChiefOkemosDistrict/Advancement/Venturing/ -> /ChiefOkemosDi
 http://localhost:63/ChiefOkemosDistrict/Advancement/Venturing/ -> /ChiefOkemosDistrict/Advancement
 http://localhost:63/ChiefOkemosDistrict/Advancement/Venturing/ -> /ChiefOkemosDistrict/Advancement/
 http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js
+http://localhost:63/ -> /page2.html
+http://localhost:63/advancement/ -> /ChiefOkemosDistrict/Advancement
+http://localhost:63/advancement/ -> /ChiefOkemosDistrict/Advancement/
+http://localhost:63/ChiefOkemosDistrict/Advancement/ -> /ChiefOkemosDistrict/zLocalCopyIndicatorWithRefresh3.js
