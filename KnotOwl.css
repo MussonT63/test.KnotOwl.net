@@ -1,0 +1,13 @@
+a       {color: green; text-decoration: none;}
+a:hover {              text-decoration: underline;}
+
+.lightgray {color: lightgrey;}
+.black     {color: black;}
+.white     {color: white;}
+
+body {
+      background-color: silver;
+      color: #C96333 ;
+}
+
+/* font {color: #C96333;} */
