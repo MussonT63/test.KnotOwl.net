@@ -1,35 +1,45 @@
-<meta http-equiv=refresh content=3;>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.8.0">
+  <meta http-equiv="refresh" content="3;">
   <link rel="stylesheet" href="index.css">
-<header>
+  <title>Hamburger Menu</title>
+</head>
+<body>
+  <header>
     <nav class="navbar">
-        <!-- Hamburger button using semantic HTML -->
-        <a href="#" class="nav-branding"><img src=favicon.ico></a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul class="nav-menu" id="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <!-- Hamburger button using semantic HTML -->
+      <a href="#" class="nav-branding"><img alt="wbOwl" src="favicon.ico"></a> <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span></button>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"> <a href="#home" class="nav-link">Home</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Home</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Eagle</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">MBC Info</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Reports</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Venturing</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Calendar</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Laurels</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">FAQ</a> </li>
+        <li class="nav-item"> <a href="#home" class="nav-link">Misc</a> </li>
+        <li class="nav-item"> <a href="#about" class="nav-link">About</a> </li>
+        <li class="nav-item"> <a href="#contact" class="nav-link">Contact</a> </li>
+      </ul>
     </nav>
-</header>
+  </header>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
 
-
-<script>
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', () => {
-    // Toggle the 'active' class on both the hamburger and the menu
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    hamburger.addEventListener('click', () => {
+      // Toggle the 'active' class on both the hamburger and the menu
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
     
-    // Toggle the aria-expanded attribute for accessibility
-    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-    hamburger.setAttribute('aria-expanded', !isExpanded);
-});
-	</script>
-
+      // Toggle the aria-expanded attribute for accessibility
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      hamburger.setAttribute('aria-expanded', !isExpanded);
+    });
+  </script>
+</body>
+</html>
