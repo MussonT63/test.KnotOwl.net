@@ -1,0 +1,76 @@
+/* Basic Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #333; /* */
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none; /* */
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none; /* Hide by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer; /* */
+    padding: 0;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.4s; /* */
+}
+
+/* Mobile styles (e.g., max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%; /* Position off-screen initially */
+        top: 60px; /* Adjust based on navbar height */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Class added by JavaScript to make menu visible */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+}
+
