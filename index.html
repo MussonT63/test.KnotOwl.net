@@ -3,40 +3,50 @@
 <head>
   <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/KnotOwl.css" >
+  <link rel="stylesheet" type="text/css" href="/KnotOwl.css">
   <link rel="stylesheet" type="text/css" href="/menu.css">
-  <script language="JavaScript" type="text/javascript">
-  <!-- function movensize850600() { self.resizeTo(600,screen.height); self.moveTo(850,0); } --> 
-  </script>
-
   <title>The Knot Owl's home</title>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div>
-        <a href="/hamburger-menu/" class="nav-branding"><img alt="wbOwl" src="/favicon.ico"></a>
+        <a href="/" class="nav-branding"><img alt="Wood Badge Owl" src="/favicon.ico"></a>
       </div>
       <div>
         <h2>Owl's Knot Masters</h2>
       </div>
       <div>
         <!-- Hamburger button using semantic HTML -->
-         <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-	   <span class="bar">&nbsp;</span> 
-	   <span class="bar">&nbsp;</span> 
-	   <span class="bar">&nbsp;</span>
-	 </button>
+         <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span></button>
         <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item"> <a class="nav-link" href="/" >Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/KnotMasters" >KnotMasters</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/" >Advancement</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/Calendar/" >Calendar</a> </li>
-	</ul>
+          <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="/KnotMasters">KnotMasters</a> </li>
+          <li class="nav-item">
+            <mark class="red">Advancement</mark>
+            <ul>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/Eagle/">Eagle</a> </li>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/Venturing/">Venturing</a> </li>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/MBCinfo/">MBC Info</a> </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <mark class="red">Chief Okemos</mark>
+            <ul>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/Reports/">Reports</a> </li>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Laurels/">Laurels</a> </li>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Calendar/">Calendar</a> </li>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/FAQ/">FAQ</a> </li>
+              <li> <a class="nav-link" href="/ChiefOkemosDistrict/Advancement/Miscellaneous/">Miscellaneous</a> </li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
+        </ul>
       </div>
-  </header>
-      <img src="owl.png" class=fitOwl alt="Owl with the Good Turn knot">
+    </nav>
+  </header><a href="/" class="nav-branding"><img src="owl.png" class="fitOwl" alt="The Knot Owl with the Good Turn knot"></a> 
   <script>
+
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
 
