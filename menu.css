@@ -64,7 +64,7 @@ body { background-color: blue; }
 /* default (mobile/narrow) settings end */
 /* -------------------------------------------------- */
 /* wider screen (desktop/wide) settings start */
-@media screen and (min-width: 400px) { /* ie, wider than this get's these settings */
+@media screen and (min-width: 600px) { /* ie, wider than this get's these settings */
   .nav-menu {
       /* right: -100%; Position off-screen initially */
       /* top: 105px; Adjust based on navbar height */
