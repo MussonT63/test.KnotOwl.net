@@ -49,7 +49,7 @@ body { background-color: blue; }
   position: fixed;
   right: -100%; /* Position off-screen initially */
   top: 105px; /* Adjust based on navbar height */
-  width: 45%; /* width: 50%; */
+  width: 45%; /* open menu width */
   flex-direction: column;
   background-color: #333;
   text-align: center;
@@ -64,7 +64,7 @@ body { background-color: blue; }
   .nav-menu {
       /* right: -100%; Position off-screen initially */
       /* top: 105px; Adjust based on navbar height */
-      width: 30%; /* width: 25%; */
+      width: 30%; /* open menu width */
       background-color: blue;
   }
   body { background-color: silver; }
