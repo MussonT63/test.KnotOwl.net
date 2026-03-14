@@ -1,0 +1,78 @@
+/* Basic Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 { text-align: center; }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #333;
+  color: white; /* font color */
+}
+div { display: flex; }
+
+/* Class added by JavaScript to make menu visible */
+.nav-menu.active { right: 0; }
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+  /* Hide by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.4s; /* */
+}
+
+/* default (mobile/narrow) settings start */
+body { background-color: lightgray; }
+.nav-menu {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  right: -100%; /* Position off-screen initially */
+  top: 105px; /* Adjust based on navbar height */
+  width: 45%; /* width: 50%; */
+  flex-direction: column;
+  background-color: #333;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-item { margin: 15px 0; }
+/* default (mobile/narrow) settings end */
+/* -------------------------------------------------- */
+/* wider screen (desktop/wide) settings start */
+@media screen and (min-width: 400px) { /* ie, wider than this get's these settings */
+  .nav-menu {
+      /* right: -100%; Position off-screen initially */
+      /* top: 105px; Adjust based on navbar height */
+      width: 30%; /* width: 25%; */
+      background-color: blue;
+  }
+  body { background-color: lightblue; }
+  /* .nav-item { margin: 15px; } This is the margin around menu items */
+}
+/* wider screen (desktop/wide) settings end */
+
+
+/* @media only screen and (max-width: 600px) { */
+@media only screen and (min-width: 600px) {
+}
