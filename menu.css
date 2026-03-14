@@ -7,10 +7,16 @@
 
 h1, h2 { text-align: center; }
 
-ul, ol { list-style-type: none; }
-.red { 
-  color: red;
+ul, ol { list-style-type: none;
 }
+.sub-menu {
+      text-align: left;
+      margin-left: 50%;
+      display: none;
+  /*
+   */
+}
+.red { color: red; }
 
 .navbar {
   display: flex;

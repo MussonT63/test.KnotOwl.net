@@ -14,16 +14,29 @@
         <a href="/" class="nav-branding"><img alt="Wood Badge Owl" src="/favicon.ico"></a>
       </div>
       <div>
-        <h2>Owl's Knot Masters</h2>
+        <h2 id="siteTitle">Title</h2>
+        <script language="JavaScript" type="text/javascript" src="./title.js"></script>
       </div>
       <div>
         <!-- Hamburger button using semantic HTML -->
-         <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span></button>
         <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
           <li class="nav-item">
-            <mark class="red">Advancement</mark>
+            <a class="nav-link" href="/">Home</a>
+          </li>
+	  
+
+          <li class="nav-item">
+	    <mark class="red" onclick="myFunction(0)">TestSubMenu</mark>
+            <ul id="sub-menu-0" class=sub-menu >
+              <li> <a class="nav-link" href="/Adv/Venturing/">MenuItem</a> </li>
             <ul>
+          </li>
+
+
+          <li class="nav-item">
+            <mark class="red" onclick="myFunction(1)">Advancement</mark>
+            <ul id="sub-menu-1" >
               <li> <a class="nav-link" href="/Adv/Eagle/">Eagle</a> </li>
               <li> <a class="nav-link" href="/Adv/Venturing/">Venturing</a> </li>
               <li> <a class="nav-link" href="/Adv/MBCinfo/">MBC Info</a> </li>
@@ -39,26 +52,34 @@
               <li> <a class="nav-link" href="/COD/Misc/">Misc</a> </li>
             </ul>
           </li>
-	  <li class="nav-item"> <a class="nav-link" href="/KnotMasters"><mark class=red> KnotMasters</mark></a>
+          <li class="nav-item">
+            <a class="nav-link" href="/KnotMasters"><mark class="red">KnotMasters</mark></a>
             <ul>
-		    <li> <a class="nav-link" href="/KnotMasters/1-Apprentice_White.html" >Apprentice</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/2-Knotter_Yellow.html" >Knotter</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/3-Hitcher_Red.html" >Hitcher</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/4-Master_Blue.html" >Master</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/5-Owl_Green.html" >Owl</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/L-Lasher_Overhand_in_ends.html" >Lasher</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/M-Maker_Overhand_in_bight.html" >Maker</a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/0-Rules.html" >Rules</a></a> </li>
-		    <li> <a class="nav-link" href="/KnotMasters/Z-Definitions.html" >Definitions</a></a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/1-Apprentice_White.html">Apprentice</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/2-Knotter_Yellow.html">Knotter</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/3-Hitcher_Red.html">Hitcher</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/4-Master_Blue.html">Master</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/5-Owl_Green.html">Owl</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/L-Lasher_Overhand_in_ends.html">Lasher</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/M-Maker_Overhand_in_bight.html">Maker</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/0-Rules.html">Rules</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/Z-Definitions.html">Definitions</a> </li>
             </ul>
-	  </li>
-          <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header><a href="/" class="nav-branding"><img src="owl.png" class="fitOwl" alt="The Knot Owl with the Good Turn knot"></a> 
-  <script language="JavaScript" type="text/javascript" src="./location.js"></script>
-  
+  <script language="JavaScript" type="text/javascript" src="./location.js"></script> 
+  <script>
+    function myFunction(i) {
+      console.log("test",i)
+      document.getElementById(`sub-menu-${i}`).style.display = "block";
+    }
+  </script>
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
