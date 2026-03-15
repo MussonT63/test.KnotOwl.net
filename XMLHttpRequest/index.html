@@ -1,19 +1,23 @@
+Stuff
+
+<div id=demo>string</div>
+
 <script>
 // 1. Create an XMLHttpRequest object
 const xhr = new XMLHttpRequest();
 
 // 2. Configure the request with open()
-xhr.open('GET', 'http://localhost:63', true); // Method, URL, Asynchronous (true)
+xhr.open('GET', 'http://localhost:63/XMLHttpRequest/include.html', true); // Method, URL, Asynchronous (true)
 
 // 3. Set up an event handler for when the request is complete
 xhr.onload = function() {
     // Check if the request was successful (status 200 is "OK")
     if (xhr.status === 200) {
         // Parse the response, typically JSON, and use the data
-        const data = JSON.parse(xhr.responseText);
+        const data = xhr.responseText;
         console.log(data);
         // You can update the webpage content here
-        // document.getElementById("demo").innerHTML = xhr.responseText;
+        document.getElementById("demo").innerHTML = xhr.responseText;
     } else {
         // Handle HTTP errors
         console.error('Error: ' + xhr.status + ' ' + xhr.statusText);

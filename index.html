@@ -29,7 +29,7 @@
 	    <mark class="red" onclick="myFunction(0)">TestSubMenu</mark>
             <ul id="sub-menu-0" class=sub-menu >
               <li> <a class="nav-link" href="/Adv/Venturing/">MenuItem</a> </li>
-            <ul>
+            </ul>
           </li>
 
           <li class="nav-item">
@@ -77,8 +77,8 @@
   <script language="JavaScript" type="text/javascript" src="./location.js"></script> 
   <script>
     function myFunction(i) {
-      console.log("test",i)
-      document.getElementById(`sub-menu-${i}`).style.display = "block";
+      let subMenu = document.getElementById(`sub-menu-${i}`);
+      subMenu.style.display = subMenu.style.display == "block" ? "none" : "block";
     }
   </script>
   <script>

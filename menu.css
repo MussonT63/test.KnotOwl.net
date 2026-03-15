@@ -58,7 +58,7 @@ body { background-color: blue; }
   list-style: none;
   position: fixed;
   right: -100%; /* Position off-screen initially */
-  top: 105px; /* Adjust based on navbar height */
+  top: 68px; /* Adjust based on navbar height */
   width: 45%; /* open menu width */
   flex-direction: column;
   background-color: #333;
