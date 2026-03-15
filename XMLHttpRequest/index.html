@@ -1,35 +1,23 @@
-Stuff
-
-<div id=demo>string</div>
-
-<script>
-// 1. Create an XMLHttpRequest object
-const xhr = new XMLHttpRequest();
-
-// 2. Configure the request with open()
-xhr.open('GET', 'http://localhost:63/XMLHttpRequest/include.html', true); // Method, URL, Asynchronous (true)
-
-// 3. Set up an event handler for when the request is complete
-xhr.onload = function() {
-    // Check if the request was successful (status 200 is "OK")
-    if (xhr.status === 200) {
-        // Parse the response, typically JSON, and use the data
-        const data = xhr.responseText;
-        console.log(data);
-        // You can update the webpage content here
-        document.getElementById("demo").innerHTML = xhr.responseText;
-    } else {
-        // Handle HTTP errors
-        console.error('Error: ' + xhr.status + ' ' + xhr.statusText);
-    }
-};
-
-// 4. Set up an event handler for network errors
-xhr.onerror = function() {
-    console.error("Network error occurred");
-};
-
-// 5. Send the request
-xhr.send(); // Used for GET requests; for POST, you can pass data to send()
-</script>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.8.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/KnotOwl.css">
+  <link rel="stylesheet" type="text/css" href="/menu.css">
+  <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="/menu.js"></script> 
+  <header>
+    <script type="text/javascript" src="./menu-section-1.js"></script> 
+    <script type="text/javascript" src="./menu-section-2.js"></script> 
+    <script type="text/javascript" src="./menu-section-3.js"></script>
+    <nav class="navbar">
+      <div id="menu-section-1"></div>
+      <div id="menu-section-2"></div>
+      <div id="menu-section-3"></div>
+    </nav>
+  </header>
+</body>
+</html>
