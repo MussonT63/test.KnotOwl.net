@@ -1,0 +1,21 @@
+a       {color: green; text-decoration: none;}
+a:hover {              text-decoration: underline;}
+
+.lightgray {color: lightgrey;}
+.black     {color: black;}
+.white     {color: white;}
+
+body {
+      background-color: silver;
+}
+
+img.fitOwl {
+    width: 100%;
+    max-height: 90vh; /* 90% */
+    border: 9px solid transparent; /* Width, style, and color */
+    object-fit: contain;
+  vertical-align: top;
+    
+}
+
+/* font {color: #C96333;} */
