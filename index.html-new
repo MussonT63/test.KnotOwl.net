@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.8.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/KnotOwl.css">
+  <link rel="stylesheet" type="text/css" href="/menu.css">
+  <title>The Knot Owl's home</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div>
+        <a href="/" class="nav-branding"><img alt="Wood Badge Owl" src="/WoodBadgePatrolOwl.svg" width=32></a>
+      </div>
+      <div>
+        <h2 id="siteTitle">Title</h2>
+        <script type="text/javascript" src="./title.js"></script>
+      </div>
+      <div>
+        <!-- Hamburger button using semantic HTML -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span> <span class="bar">&nbsp;</span></button>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
+          <li class="nav-item" onclick="mySubMenu(1)">Advancement
+            <ul id="sub-menu-1" class="sub-menu">
+              <li> <a class="nav-link" href="/Adv/Eagle/">Eagle</a> </li>
+              <li> <a class="nav-link" href="/Adv/Venturing/">Venturing</a> </li>
+              <li> <a class="nav-link" href="/Adv/MBCinfo/">MBC Info</a> </li>
+            </ul>
+          </li>
+          <li class="nav-item" onclick="mySubMenu(2)">Chief Okemos
+            <ul id="sub-menu-2" class="sub-menu">
+              <li> <a class="nav-link" href="/COD/Reports/">Reports</a> </li>
+              <li> <a class="nav-link" href="/COD/Laurels/">Laurels</a> </li>
+              <li> <a class="nav-link" href="/COD/Calendar/">Calendar</a> </li>
+              <li> <a class="nav-link" href="/COD/FAQ/">FAQ</a> </li>
+              <li> <a class="nav-link" href="/COD/Misc/">Misc</a> </li>
+            </ul>
+          </li>
+          <li class="nav-item" onclick="mySubMenu(3)">KnotMasters
+            <ul id="sub-menu-3" class="sub-menu">
+              <li> <a class="nav-link" href="/KnotMasters/">KnotMasters</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/1-Apprentice_White.html">Apprentice</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/2-Knotter_Yellow.html">Knotter</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/3-Hitcher_Red.html">Hitcher</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/4-Master_Blue.html">Master</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/5-Owl_Green.html">Owl</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/L-Lasher_Overhand_in_ends.html">Lasher</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/M-Maker_Overhand_in_bight.html">Maker</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/0-Rules.html">Rules</a> </li>
+              <li> <a class="nav-link" href="/KnotMasters/Z-Definitions.html">Definitions</a> </li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="/XMLHttpRequest/">XMLHttpRequest</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <p><a href="/" class="nav-branding"><img src="KnotMastersOwl.svg" class="fitOwl" alt="The Knot Owl with the Good Turn knot"></a></p>
+  <script type="text/javascript" src="./location.js"></script> 
+  <script type="text/javascript" src="./menu.js"></script> 
+</body>
+</html>
