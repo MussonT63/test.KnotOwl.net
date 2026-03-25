@@ -10,6 +10,14 @@ const multiLineMenu = `
     </button><!-- Button -->
     <ul class="nav-menu" id="nav-menu"><!-- Menu Start -->
       <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
+
+      <li class="nav-item" onclick="mySubMenu(0)">testing
+        <ul id="sub-menu-0" class="sub-menu">
+          <li class=sub-item> <a class="nav-link" href="one/">one</a> </li>
+          <li class=sub-item> <a class="nav-link" href="two/">two</a> </li>
+        </ul>
+      </li>
+
       <li class="nav-item" onclick="mySubMenu(1)">Advancement
         <ul id="sub-menu-1" class="sub-menu">
           <li class=sub-item> <a class="nav-link" href="/Adv/Eagle/">Eagle</a> </li>
